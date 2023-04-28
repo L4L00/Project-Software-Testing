@@ -47,12 +47,12 @@ class TestBowlingGame(unittest.TestCase):
         self.game.roll(5)
         self.game.roll(5)
         self.game.roll(3)
-        assert self.game.score(31)
+        assert self.game.score()==31
     def testOnespareOnestrike(self):
         self.game.roll(5)
         self.game.roll(5)
         self.game.roll(10)
-        assert self.game.score(20)
+        assert self.game.score()==20
 
 
 
